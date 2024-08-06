@@ -1,0 +1,213 @@
+@use "../layout/flex" as flx;
+@use "../utils/mixins" as mxn;
+@use "../utils/variables" as var;
+@use "./grid" as grd;
+.footer-top {
+  .box {
+    box-shadow: 22px 30px 95px 1px rgba(86, 86, 86, 0.2);
+    background-color: var.$bg-red;
+    max-width: 1406px;
+    border-radius: 20px;
+    border: 1px;
+    position: relative;
+    top: 220px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    p {
+      font-family: open sans;
+      font-size: 23px;
+      font-weight: 700;
+      line-height: 29.9px;
+      letter-spacing: 0.04em;
+      text-align: center;
+      padding: 64px 0 25px;
+      margin: 0 auto;
+      color: white;
+    }
+    h1 {
+      font-family: open sans;
+      font-size: 48px;
+      font-weight: 500;
+      line-height: 62.4px;
+      letter-spacing: 0.03em;
+      color: white;
+      margin: 0 auto;
+      text-align: center;
+      padding-bottom: 24px;
+      @media (max-width: 310px) {
+        font-size: 30px;
+      }
+    }
+    h2 {
+      font-family: Open Sans;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0.04em;
+      text-align: center;
+      color: white;
+    }
+    .input {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin: 0 auto;
+      padding-top: 64px;
+      padding-bottom: 64px;
+      input {
+        width: 635px;
+        height: 52px;
+        border: 1px solid white;
+        border-radius: 100px;
+        background-color: var.$bg-red;
+        color: white;
+      }
+
+      button {
+        width: 144px;
+        height: 52px;
+        display: block;
+        gap: 10px;
+        border-radius: 100px;
+        border: 1px solid white;
+        background-color: var.$bg-red;
+        color: white;
+        &:hover {
+          background-color: rgb(107, 1, 1);
+          border: 1px solid rgba(113, 0, 0, 0.789);
+          color: white;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 777px) {
+  .input {
+    flex-direction: column;
+  }
+}
+@media (max-width: 770px) {
+  input {
+    max-width: 100%;
+  }
+}
+// footer
+footer {
+  background-color: var.$bg-red;
+  .footer-1 {
+    padding: 292px 0 64px;
+    display: flex;
+    justify-content: space-between;
+    .footer-one {
+      p {
+        font-family: open sans;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 41.6px;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: white;
+      }
+      h1 {
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: white;
+      }
+      h2 {
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.04em;
+        text-align: center;
+        margin: 0 auto;
+        width: 139px;
+        height: 52px;
+        color: white;
+      }
+    }
+    .footer-two {
+      p {
+        font-family: open sans;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 41.6px;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: white;
+      }
+      h1 {
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.04em;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 438px;
+        padding-top: 32px;
+        color: white;
+      }
+      h2 {
+        img {
+          max-width: 100%;
+          display: flex;
+          padding-top: 45px;
+          margin: 0 auto;
+        }
+      }
+      h3 {
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.04em;
+        padding-top: 80px;
+        text-align: center;
+        color: white;
+      }
+    }
+    .footer-three {
+      p {
+        font-family: open sans;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 41.6px;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: white;
+      }
+      h1 {
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.04em;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 158px;
+        color: white;
+      }
+      h2 {
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.04em;
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+        max-width: 154px;
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .footer-1 {
+    display: flex;
+    flex-direction: column;
+  }
+}

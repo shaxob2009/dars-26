@@ -1,0 +1,55 @@
+@use "../layout/flex" as flx;
+@use "../utils/mixins" as mxn;
+@use "../utils/variables" as var;
+@use "./grid" as grd;
+
+header {
+  background-color: var.$bg-red;
+  padding-top: 14px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  backdrop-filter: blur(50px);
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    li {
+      a {
+        text-decoration: none;
+        color: var.$bg-white;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21.79px;
+        letter-spacing: 0.04em;
+        transition: 0.5s;
+        text-align: left;
+        color: white;
+        &:hover {
+          padding-bottom: 4px;
+          border-bottom: 3px solid rgba(251, 255, 0, 0.723);
+          border-radius: 100px;
+        }
+      }
+    }
+    button {
+      padding: 10px 40px;
+      background-color: var.$bg-red;
+      border-radius: 100px;
+      color: white;
+      border: 1px solid white;
+      transition: 0.4s;
+      &:hover {
+        background-color: rgb(107, 1, 1);
+        border: 1px solid rgba(113, 0, 0, 0.789);
+        color: white;
+      }
+    }
+  }
+}
+@media (max-width: 777px) {
+  ul {
+    flex-direction: column;
+  }
+}
